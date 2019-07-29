@@ -1,17 +1,17 @@
-<repast.simphony.data2.engine.DataSetDescriptor>
+<repast.simphony.data2.engine.DataSetDescriptor simphonyVersion="2.6.0">
   <name>Clima</name>
   <type>AGGREGATE</type>
   <inclTick>true</inclTick>
   <inclBatchRun>false</inclBatchRun>
   <inclRandomSeed>false</inclRandomSeed>
   <scheduleParams>
-    <start>1.0</start>
-    <interval>1.0</interval>
+    <start>0.0</start>
+    <interval>12.0</interval>
     <priority>-Infinity</priority>
     <pType>LAST</pType>
     <duration>-1.0</duration>
     <frequency>REPEAT</frequency>
-    <hashCode>2009520836</hashCode>
+    <hashCode>1358708350</hashCode>
   </scheduleParams>
   <atEnd>false</atEnd>
   <methodDataSources class="linked-hash-map">
@@ -20,7 +20,7 @@
       <repast.simphony.data2.engine.MethodDataSourceDefinition>
         <id>Humedad</id>
         <className>infeccion.Clima</className>
-        <methodName>getHumidityDay</methodName>
+        <methodName>getCurrentHumidity</methodName>
         <aggType>MEAN</aggType>
       </repast.simphony.data2.engine.MethodDataSourceDefinition>
     </entry>
@@ -29,7 +29,7 @@
       <repast.simphony.data2.engine.MethodDataSourceDefinition>
         <id>Precipitacion</id>
         <className>infeccion.Clima</className>
-        <methodName>getPrecipitationDay</methodName>
+        <methodName>getCurrentPrecipitation</methodName>
         <aggType>MEAN</aggType>
       </repast.simphony.data2.engine.MethodDataSourceDefinition>
     </entry>
@@ -38,7 +38,7 @@
       <repast.simphony.data2.engine.MethodDataSourceDefinition>
         <id>Temperatura</id>
         <className>infeccion.Clima</className>
-        <methodName>getTemperatureDay</methodName>
+        <methodName>getCurrentTemperature</methodName>
         <aggType>MEAN</aggType>
       </repast.simphony.data2.engine.MethodDataSourceDefinition>
     </entry>
