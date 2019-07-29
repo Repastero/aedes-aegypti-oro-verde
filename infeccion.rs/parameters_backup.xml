@@ -1,43 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <parameters>
-	<parameter name="randomSeed" displayName="Default Random Seed"
-		type="int" defaultValue="__NULL__" isReadOnly="false"
-		converter="repast.simphony.parameter.StringConverterFactory$IntConverter" />
-	<parameter name="gridallows multi" displayName="grid allows multi"
-		type="java.lang.Boolean" defaultValue="true" isReadOnly="false"
-		converter="repast.simphony.parameter.StringConverterFactory$BooleanConverter" />
-	<parameter name="gridheight" displayName="grid height" type="java.lang.Integer"
-		defaultValue="200" isReadOnly="false"
-		converter="repast.simphony.parameter.StringConverterFactory$IntConverter" />
-	<parameter name="gridborder rule" displayName="grid border rule"
-		type="java.lang.String" defaultValue="strict" isReadOnly="false"
-		converter="repast.simphony.parameter.StringConverterFactory$StringStringConverter" />
-	<parameter name="gridwidth" displayName="grid width" type="java.lang.Integer"
-		defaultValue="200" isReadOnly="false"
-		converter="repast.simphony.parameter.StringConverterFactory$IntConverter" />
 
-	<parameter name="cantidadinfectados" displayName="numero de infectados"
-		type="int" defaultValue="1" isReadOnly="false"
-		converter="repast.simphony.parameter.StringConverterFactory$IntConverter" />
-	<parameter name="tiempoentradacaso" displayName="tiempo de entrada del caso 0"
-		type="int" defaultValue="2300" isReadOnly="false"
-		converter="repast.simphony.parameter.StringConverterFactory$IntConverter" />
-	<parameter name="cantidadinfectados" displayName="numero de infectados"
-		type="int" defaultValue="2" isReadOnly="false"
-		converter="repast.simphony.parameter.StringConverterFactory$IntConverter" />
-	<parameter name="capAcarreoIncialAcuaticos" displayName="capacidad de Acarreo Inicial" 
-		type="int"	defaultValue="6000" isReadOnly="false"
-		converter="repast.simphony.parameter.StringConverterFactory$IntConverter" />
-	<parameter name="capAcarreoNetaAcuaticos" displayName="capacidad de Acarreo Acuaticos" 
-		type="int"	defaultValue="56000" isReadOnly="false"
-		converter="repast.simphony.parameter.StringConverterFactory$IntConverter"/>
-	<parameter name="cantidadContenedores"  displayName="Cantidad de Contenedores" 
-		type="int"	defaultValue="3000" isReadOnly="false"
-		converter="repast.simphony.parameter.StringConverterFactory$IntConverter"/>
-	<parameter name="cantidadHuevosPorOvoposicion"  displayName="cantidad de Huevos por Oviposicion" 
-		type="int"	defaultValue="65" isReadOnly="false"
-		converter="repast.simphony.parameter.StringConverterFactory$IntConverter"/>	
+	<parameter name="randomSeed" displayName="Default Random Seed" type="int" defaultValue="__NULL__" />
 
 </parameters>
-
-
