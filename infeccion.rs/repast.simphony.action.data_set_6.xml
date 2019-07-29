@@ -1,0 +1,66 @@
+<repast.simphony.data2.engine.DataSetDescriptor>
+  <name>batch</name>
+  <type>AGGREGATE</type>
+  <inclTick>true</inclTick>
+  <inclBatchRun>true</inclBatchRun>
+  <inclRandomSeed>true</inclRandomSeed>
+  <scheduleParams>
+    <start>0.0</start>
+    <interval>12.0</interval>
+    <priority>Infinity</priority>
+    <pType>FIRST</pType>
+    <duration>-1.0</duration>
+    <frequency>REPEAT</frequency>
+    <hashCode>1889262774</hashCode>
+  </scheduleParams>
+  <atEnd>true</atEnd>
+  <methodDataSources class="linked-hash-map">
+    <entry>
+      <string>aedes infectado</string>
+      <repast.simphony.data2.engine.MethodDataSourceDefinition>
+        <id>aedes infectado</id>
+        <className>infeccion.Adulto</className>
+        <methodName>getInfected</methodName>
+        <aggType>SUM</aggType>
+      </repast.simphony.data2.engine.MethodDataSourceDefinition>
+    </entry>
+    <entry>
+      <string>humano infectado</string>
+      <repast.simphony.data2.engine.MethodDataSourceDefinition>
+        <id>humano infectado</id>
+        <className>infeccion.humanos</className>
+        <methodName>getInfected</methodName>
+        <aggType>SUM</aggType>
+      </repast.simphony.data2.engine.MethodDataSourceDefinition>
+    </entry>
+    <entry>
+      <string>casos reportados</string>
+      <repast.simphony.data2.engine.MethodDataSourceDefinition>
+        <id>casos reportados</id>
+        <className>infeccion.humanos</className>
+        <methodName>getCaso_reportado</methodName>
+        <aggType>SUM</aggType>
+      </repast.simphony.data2.engine.MethodDataSourceDefinition>
+    </entry>
+    <entry>
+      <string>humanos recuperados</string>
+      <repast.simphony.data2.engine.MethodDataSourceDefinition>
+        <id>humanos recuperados</id>
+        <className>infeccion.humanos</className>
+        <methodName>getRecuperado</methodName>
+        <aggType>SUM</aggType>
+      </repast.simphony.data2.engine.MethodDataSourceDefinition>
+    </entry>
+  </methodDataSources>
+  <countSources class="linked-hash-map">
+    <entry>
+      <string>crecimiento aedes</string>
+      <repast.simphony.data2.engine.CountSourceDefinition>
+        <typeName>infeccion.Adulto</typeName>
+        <id>crecimiento aedes</id>
+      </repast.simphony.data2.engine.CountSourceDefinition>
+    </entry>
+  </countSources>
+  <customNADataSources class="linked-hash-map"/>
+  <customAggDataSources class="linked-hash-map"/>
+</repast.simphony.data2.engine.DataSetDescriptor>

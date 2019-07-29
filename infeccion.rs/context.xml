@@ -1,0 +1,11 @@
+<context id="infeccion" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://repast.org/scenario/context">
+	<projection type="grid" id="grid">
+		<attribute type="int" value="200" id="width"></attribute>
+		<attribute
+			type="int" value="200" id="height" /><attribute
+			type="string" value="strict" id="border rule" /><attribute
+			type="boolean" value="true" id="allows multi" /></projection>
+
+	<projection type="network" id="redContactos"/>
+</context>
+

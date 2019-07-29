@@ -1,0 +1,57 @@
+<repast.simphony.data2.engine.DataSetDescriptor>
+  <name>Estados Acuaticos</name>
+  <type>AGGREGATE</type>
+  <inclTick>true</inclTick>
+  <inclBatchRun>false</inclBatchRun>
+  <inclRandomSeed>false</inclRandomSeed>
+  <scheduleParams>
+    <start>1.0</start>
+    <interval>1.0</interval>
+    <priority>-Infinity</priority>
+    <pType>LAST</pType>
+    <duration>-1.0</duration>
+    <frequency>REPEAT</frequency>
+    <hashCode>-640670624</hashCode>
+  </scheduleParams>
+  <atEnd>false</atEnd>
+  <methodDataSources class="linked-hash-map">
+    <entry>
+      <string>Pupas</string>
+      <repast.simphony.data2.engine.MethodDataSourceDefinition>
+        <id>Pupas</id>
+        <className>infeccion.Acuatico</className>
+        <methodName>getCantidadPupas</methodName>
+        <aggType>MEAN</aggType>
+      </repast.simphony.data2.engine.MethodDataSourceDefinition>
+    </entry>
+    <entry>
+      <string>Larvas</string>
+      <repast.simphony.data2.engine.MethodDataSourceDefinition>
+        <id>Larvas</id>
+        <className>infeccion.Acuatico</className>
+        <methodName>getCantidadLarvas</methodName>
+        <aggType>MEAN</aggType>
+      </repast.simphony.data2.engine.MethodDataSourceDefinition>
+    </entry>
+    <entry>
+      <string>Huevos</string>
+      <repast.simphony.data2.engine.MethodDataSourceDefinition>
+        <id>Huevos</id>
+        <className>infeccion.Acuatico</className>
+        <methodName>getCantidadHuevos</methodName>
+        <aggType>MEAN</aggType>
+      </repast.simphony.data2.engine.MethodDataSourceDefinition>
+    </entry>
+  </methodDataSources>
+  <countSources class="linked-hash-map">
+    <entry>
+      <string>Totales</string>
+      <repast.simphony.data2.engine.CountSourceDefinition>
+        <typeName>infeccion.Acuatico</typeName>
+        <id>Totales</id>
+      </repast.simphony.data2.engine.CountSourceDefinition>
+    </entry>
+  </countSources>
+  <customNADataSources class="linked-hash-map"/>
+  <customAggDataSources class="linked-hash-map"/>
+</repast.simphony.data2.engine.DataSetDescriptor>

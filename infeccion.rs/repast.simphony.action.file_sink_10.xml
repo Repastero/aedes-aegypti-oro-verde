@@ -1,0 +1,19 @@
+<repast.simphony.data2.engine.FileSinkDescriptor>
+  <name>batch</name>
+  <dataSet>batch</dataSet>
+  <delimiter>,</delimiter>
+  <format>TABULAR</format>
+  <sourceIds class="linked-hash-set">
+    <string>run</string>
+    <string>tick</string>
+    <string>aedes infectado</string>
+    <string>crecimiento aedes</string>
+    <string>humano infectado</string>
+    <string>humanos recuperados</string>
+    <string>casos reportados</string>
+  </sourceIds>
+  <!--   <fileName>C:\RepastSimphony-2.4\eclipse\WorkSapaces\TesisGit\infeccion\freezedried_data\salida</fileName> -->
+     <!--    <fileName>C:\Users\usuario\workspaceUltimaV\infeccion\output\salida</fileName> -->
+  <fileName>salida</fileName>
+  <addTimeStamp>true</addTimeStamp>
+</repast.simphony.data2.engine.FileSinkDescriptor>
