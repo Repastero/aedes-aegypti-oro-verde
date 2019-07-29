@@ -1,36 +1,39 @@
-<repast.simphony.data2.engine.DataSetDescriptor>
-  <name>Cantidad de Mosquitos</name>
-  <type>AGGREGATE</type>
+<repast.simphony.data2.engine.DataSetDescriptor simphonyVersion="2.6.0">
+  <name>Distancia</name>
+  <type>NON_AGGREGATE</type>
+  <sourceType>infeccion.Mosquito</sourceType>
   <inclTick>true</inclTick>
   <inclBatchRun>false</inclBatchRun>
   <inclRandomSeed>false</inclRandomSeed>
   <scheduleParams>
-    <start>1.0</start>
-    <interval>1.0</interval>
+    <start>0.0</start>
+    <interval>12.0</interval>
     <priority>-Infinity</priority>
     <pType>LAST</pType>
     <duration>-1.0</duration>
     <frequency>REPEAT</frequency>
-    <hashCode>-640670624</hashCode>
+    <hashCode>1358708350</hashCode>
   </scheduleParams>
   <atEnd>false</atEnd>
-  <methodDataSources class="linked-hash-map"/>
-  <countSources class="linked-hash-map">
+  <methodDataSources class="linked-hash-map">
     <entry>
-      <string>Acuatico</string>
-      <repast.simphony.data2.engine.CountSourceDefinition>
-        <typeName>infeccion.Acuatico</typeName>
-        <id>Acuatico</id>
-      </repast.simphony.data2.engine.CountSourceDefinition>
+      <string>Distancia</string>
+      <repast.simphony.data2.engine.MethodDataSourceDefinition>
+        <id>Distancia</id>
+        <className>infeccion.Mosquito</className>
+        <methodName>getDistancia</methodName>
+      </repast.simphony.data2.engine.MethodDataSourceDefinition>
     </entry>
     <entry>
-      <string>Adulto</string>
-      <repast.simphony.data2.engine.CountSourceDefinition>
-        <typeName>infeccion.Adulto</typeName>
-        <id>Adulto</id>
-      </repast.simphony.data2.engine.CountSourceDefinition>
+      <string>toString</string>
+      <repast.simphony.data2.engine.MethodDataSourceDefinition>
+        <id>toString</id>
+        <className>infeccion.Mosquito</className>
+        <methodName>toString</methodName>
+      </repast.simphony.data2.engine.MethodDataSourceDefinition>
     </entry>
-  </countSources>
+  </methodDataSources>
+  <countSources class="linked-hash-map"/>
   <customNADataSources class="linked-hash-map"/>
   <customAggDataSources class="linked-hash-map"/>
 </repast.simphony.data2.engine.DataSetDescriptor>
