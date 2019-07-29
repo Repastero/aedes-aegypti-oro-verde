@@ -1,54 +1,63 @@
-<repast.simphony.data2.engine.DataSetDescriptor>
-  <name>Estados Acuaticos</name>
+<repast.simphony.data2.engine.DataSetDescriptor simphonyVersion="2.6.0">
+  <name>batch</name>
   <type>AGGREGATE</type>
   <inclTick>true</inclTick>
-  <inclBatchRun>false</inclBatchRun>
-  <inclRandomSeed>false</inclRandomSeed>
+  <inclBatchRun>true</inclBatchRun>
+  <inclRandomSeed>true</inclRandomSeed>
   <scheduleParams>
-    <start>1.0</start>
-    <interval>1.0</interval>
-    <priority>-Infinity</priority>
-    <pType>LAST</pType>
+    <start>0.0</start>
+    <interval>12.0</interval>
+    <priority>Infinity</priority>
+    <pType>FIRST</pType>
     <duration>-1.0</duration>
     <frequency>REPEAT</frequency>
-    <hashCode>-640670624</hashCode>
+    <hashCode>1471603993</hashCode>
   </scheduleParams>
   <atEnd>false</atEnd>
   <methodDataSources class="linked-hash-map">
     <entry>
-      <string>Pupas</string>
+      <string>Aedes infectado</string>
       <repast.simphony.data2.engine.MethodDataSourceDefinition>
-        <id>Pupas</id>
-        <className>infeccion.Acuatico</className>
-        <methodName>getCantidadPupas</methodName>
-        <aggType>MEAN</aggType>
+        <id>Aedes infectado</id>
+        <className>infeccion.Mosquito</className>
+        <methodName>getInfected</methodName>
+        <aggType>SUM</aggType>
       </repast.simphony.data2.engine.MethodDataSourceDefinition>
     </entry>
     <entry>
-      <string>Larvas</string>
+      <string>Humano infectado</string>
       <repast.simphony.data2.engine.MethodDataSourceDefinition>
-        <id>Larvas</id>
-        <className>infeccion.Acuatico</className>
-        <methodName>getCantidadLarvas</methodName>
-        <aggType>MEAN</aggType>
+        <id>Humano infectado</id>
+        <className>infeccion.InfeccionReport</className>
+        <methodName>getHumanosInfectados</methodName>
+        <aggType>SUM</aggType>
       </repast.simphony.data2.engine.MethodDataSourceDefinition>
     </entry>
     <entry>
-      <string>Huevos</string>
+      <string>Casos reportados</string>
       <repast.simphony.data2.engine.MethodDataSourceDefinition>
-        <id>Huevos</id>
-        <className>infeccion.Acuatico</className>
-        <methodName>getCantidadHuevos</methodName>
-        <aggType>MEAN</aggType>
+        <id>Casos reportados</id>
+        <className>infeccion.InfeccionReport</className>
+        <methodName>getNuevosCasos</methodName>
+        <aggType>SUM</aggType>
+      </repast.simphony.data2.engine.MethodDataSourceDefinition>
+    </entry>
+    <entry>
+      <string>Humanos recuperados</string>
+      <repast.simphony.data2.engine.MethodDataSourceDefinition>
+        <id>Humanos recuperados</id>
+        <className>infeccion.InfeccionReport</className>
+        <methodName>getHumanosRecuperados</methodName>
+        <aggType>SUM</aggType>
       </repast.simphony.data2.engine.MethodDataSourceDefinition>
     </entry>
   </methodDataSources>
   <countSources class="linked-hash-map">
     <entry>
-      <string>Totales</string>
+      <string>Crecimiento aedes</string>
       <repast.simphony.data2.engine.CountSourceDefinition>
-        <typeName>infeccion.Acuatico</typeName>
-        <id>Totales</id>
+        <typeName>infeccion.Mosquito</typeName>
+        <id>Crecimiento aedes</id>
       </repast.simphony.data2.engine.CountSourceDefinition>
     </entry>
   </countSources>
