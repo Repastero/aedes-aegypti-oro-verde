@@ -3,10 +3,10 @@
 
   <skipIfNotSupported/>
 
-  <programGroup defaultName="infeccion" location="StartMenu"/>
+  <programGroup defaultName="AedesAegypti" location="StartMenu"/>
   
   <shortcut
-     name="infeccion"
+     name="AedesAegypti"
      programGroup="yes"
      desktop="no"
      applications="no"
@@ -16,7 +16,7 @@
      commandLine=""
      workingDirectory="$INSTALL_PATH"
      description="Model"
-     iconFile="$INSTALL_PATH/infeccion/icons/model.png"
+     iconFile="$INSTALL_PATH/AedesAegypti/icons/model.png"
      iconIndex="0"
      type="Application"
      encoding="UTF-8"
@@ -33,13 +33,13 @@
      applications="no"
      startMenu="no"
      startup="no"
-     target="$INSTALL_PATH/infeccion/docs/index.html"
+     target="$INSTALL_PATH/AedesAegypti/docs/index.html"
      workingDirectory="$INSTALL_PATH/docs"
      commandLine=""
      initialState="noShow"
      iconFile="help"
      iconIndex="0" 
-     url="$INSTALL_PATH/infeccion/docs/index.html"                                
+     url="$INSTALL_PATH/AedesAegypti/docs/index.html"                                
      type="Application"
      encoding="UTF-8" 
    	 createForAll="true"  
@@ -48,7 +48,7 @@
   </shortcut>
    
   <shortcut
-     name="infeccion Uninstaller"
+     name="AedesAegypti Uninstaller"
      programGroup="yes"
      desktop="no"
      applications="no"
