@@ -1,35 +1,53 @@
-<repast.simphony.data2.engine.DataSetDescriptor>
-  <name>pico</name>
+<repast.simphony.data2.engine.DataSetDescriptor simphonyVersion="2.6.0">
+  <name>Estados Acuaticos</name>
   <type>AGGREGATE</type>
   <inclTick>true</inclTick>
   <inclBatchRun>false</inclBatchRun>
   <inclRandomSeed>false</inclRandomSeed>
   <scheduleParams>
-    <start>0.0</start>
-    <interval>1.0</interval>
+    <start>1.0</start>
+    <interval>12.0</interval>
     <priority>-Infinity</priority>
     <pType>LAST</pType>
     <duration>-1.0</duration>
     <frequency>REPEAT</frequency>
-    <hashCode>835649200</hashCode>
+    <hashCode>905202884</hashCode>
   </scheduleParams>
-  <atEnd>true</atEnd>
+  <atEnd>false</atEnd>
   <methodDataSources class="linked-hash-map">
     <entry>
-      <string>picadura frustrada</string>
+      <string>Huevos</string>
       <repast.simphony.data2.engine.MethodDataSourceDefinition>
-        <id>picadura frustrada</id>
-        <className>infeccion.Adulto</className>
-        <methodName>getPicoFrustrado</methodName>
+        <id>Huevos</id>
+        <className>infeccion.Acuatico</className>
+        <methodName>getCantidadHuevos</methodName>
         <aggType>SUM</aggType>
       </repast.simphony.data2.engine.MethodDataSourceDefinition>
     </entry>
     <entry>
-      <string>picadura exitosa</string>
+      <string>Larvas</string>
       <repast.simphony.data2.engine.MethodDataSourceDefinition>
-        <id>picadura exitosa</id>
-        <className>infeccion.Adulto</className>
-        <methodName>getPicoExito</methodName>
+        <id>Larvas</id>
+        <className>infeccion.Acuatico</className>
+        <methodName>getCantidadLarvas</methodName>
+        <aggType>SUM</aggType>
+      </repast.simphony.data2.engine.MethodDataSourceDefinition>
+    </entry>
+    <entry>
+      <string>Pupas</string>
+      <repast.simphony.data2.engine.MethodDataSourceDefinition>
+        <id>Pupas</id>
+        <className>infeccion.Acuatico</className>
+        <methodName>getCantidadPupas</methodName>
+        <aggType>SUM</aggType>
+      </repast.simphony.data2.engine.MethodDataSourceDefinition>
+    </entry>
+    <entry>
+      <string>Total</string>
+      <repast.simphony.data2.engine.MethodDataSourceDefinition>
+        <id>Total</id>
+        <className>infeccion.Acuatico</className>
+        <methodName>getCount</methodName>
         <aggType>SUM</aggType>
       </repast.simphony.data2.engine.MethodDataSourceDefinition>
     </entry>

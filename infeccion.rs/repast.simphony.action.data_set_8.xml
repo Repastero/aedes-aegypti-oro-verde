@@ -1,31 +1,29 @@
-<repast.simphony.data2.engine.DataSetDescriptor>
-  <name>inactividad</name>
-  <type>NON_AGGREGATE</type>
-  <sourceType>infeccion.Adulto</sourceType>
+<repast.simphony.data2.engine.DataSetDescriptor simphonyVersion="2.6.0">
+  <name>Poblacion</name>
+  <type>AGGREGATE</type>
   <inclTick>true</inclTick>
   <inclBatchRun>false</inclBatchRun>
   <inclRandomSeed>false</inclRandomSeed>
   <scheduleParams>
-    <start>0.0</start>
+    <start>1.0</start>
     <interval>1.0</interval>
-    <priority>Infinity</priority>
-    <pType>FIRST</pType>
+    <priority>-Infinity</priority>
+    <pType>LAST</pType>
     <duration>-1.0</duration>
     <frequency>REPEAT</frequency>
-    <hashCode>-1912147327</hashCode>
+    <hashCode>-144920859</hashCode>
   </scheduleParams>
   <atEnd>false</atEnd>
-  <methodDataSources class="linked-hash-map">
+  <methodDataSources class="linked-hash-map"/>
+  <countSources class="linked-hash-map">
     <entry>
-      <string>contadorinactividad</string>
-      <repast.simphony.data2.engine.MethodDataSourceDefinition>
-        <id>contadorinactividad</id>
-        <className>infeccion.Adulto</className>
-        <methodName>getcontadorinactividad</methodName>
-      </repast.simphony.data2.engine.MethodDataSourceDefinition>
+      <string>Humanos</string>
+      <repast.simphony.data2.engine.CountSourceDefinition>
+        <typeName>infeccion.Humano</typeName>
+        <id>Humanos</id>
+      </repast.simphony.data2.engine.CountSourceDefinition>
     </entry>
-  </methodDataSources>
-  <countSources class="linked-hash-map"/>
+  </countSources>
   <customNADataSources class="linked-hash-map"/>
   <customAggDataSources class="linked-hash-map"/>
 </repast.simphony.data2.engine.DataSetDescriptor>

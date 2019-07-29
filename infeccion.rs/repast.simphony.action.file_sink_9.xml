@@ -1,0 +1,17 @@
+<repast.simphony.data2.engine.FileSinkDescriptor simphonyVersion="2.6.0">
+  <name>Salida</name>
+  <dataSet>batch</dataSet>
+  <delimiter>;</delimiter>
+  <format>TABULAR</format>
+  <sourceIds class="linked-hash-set">
+    <string>run</string>
+    <string>tick</string>
+    <string>Aedes infectado</string>
+    <string>Crecimiento aedes</string>
+    <string>Humano infectado</string>
+    <string>Humanos recuperados</string>
+    <string>Casos reportados</string>
+  </sourceIds>
+  <fileName>./output/ModelOutput.txt</fileName>
+  <addTimeStamp>false</addTimeStamp>
+</repast.simphony.data2.engine.FileSinkDescriptor>
