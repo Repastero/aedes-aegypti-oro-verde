@@ -1,40 +1,33 @@
 package infeccion;
 
-import infeccion.*;
 import java.awt.Color;
 
 import repast.simphony.visualizationOGL2D.DefaultStyleOGL2D;
 
 public class AgentStyle2D extends DefaultStyleOGL2D {
-
 	@Override
 	public Color getColor(Object agent) {
-		// TODO Auto-generated method stub
-		if(agent instanceof humanos){
-			humanos hum= (humanos)agent;
-			if(hum.infected){
+		if (agent instanceof Humano) {
+			Humano human = (Humano)agent;
+			if (human.infected)
 				return Color.red;
-		
-			    }
-			
-			else return Color.blue;
+			else
+				return Color.black;
 		}
-		else if(agent instanceof Adulto) {
-			 	Adulto mos=(Adulto)agent;
-			 	if(mos.infected){
-			 		return Color.MAGENTA;
-			 	}
-			 	else {return Color.ORANGE;}
-	
-		      }
-		      else if(agent instanceof Conteiner) {
-					Conteiner conteiner=(Conteiner)agent;
-				 	if(conteiner.getHaveMmWater()){
-				 		return Color.blue;
-				 	}
-				 	else {return Color.black;}
-			      } 
-		    	  return Color.white;
+		else if (agent instanceof Mosquito) {
+			Mosquito mosquito = (Mosquito)agent;
+			if (mosquito.infected)
+				return Color.pink;
+			else
+				return Color.yellow;
+		}
+		else if (agent instanceof Container) {
+			Container conteiner = (Container)agent;
+			if (conteiner.containsWater())
+				return Color.blue;
+			else
+				return Color.gray;
+		}
+		return Color.DARK_GRAY;
 	}
-
 }
