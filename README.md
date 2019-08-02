@@ -6,7 +6,7 @@ Modelo basado en agentes que simula el comportamiento del mosquito Aedes Aegypti
 
 Clonar o descargar repositorio.
 
-### Prerrequisito
+### Prerrequisitos
 
 Software necesario para poder correr el modelo:
 
@@ -18,17 +18,11 @@ Repast Simphony
 
 ### Instalación
 
-Ver documentación oficial para instalar en Windows:
-
-```
+Ver documentación oficial para instalar en Windows:  
 https://repast.github.io/download.html
-```
 
-Documentación oficial para instalar en Linux:
-
-```
+Documentación oficial para instalar en Linux:  
 https://repast.github.io/download.html#update-site-install
-```
 
 ## Hecho con
 
